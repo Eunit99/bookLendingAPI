@@ -1,4 +1,4 @@
-var LibSys = function () {
+var bookSystem = function () {
 	'use strict';
 
 	let privateStore = [];
@@ -95,29 +95,29 @@ function interface() {
 				case 'a':
 				case 'Add book':
 				case 'Donate book':
-					LibSys.addBook();
+					bookSystem.addBook();
 					break;
 
 				case 'b':
 				case 'Lend book':
 				case 'Borrow book':
-					LibSys.lendBook();
+					bookSystem.lendBook();
 					break;
 
 				case 'c':
 				case 'Return book':
-					LibSys.returnBook();
+					bookSystem.returnBook();
 					break;
 
 				case 'd':
 				case 'View available books':
-					LibSys.viewAvailableBooks();
+					bookSystem.viewAvailableBooks();
 					break;
 
 				case 'e':
 				case 'View lent books':
 				case 'View borrowed books':
-					LibSys.viewLentBooks();
+					bookSystem.viewLentBooks();
 					break;
 
 				default:
